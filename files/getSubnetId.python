@@ -1,0 +1,19 @@
+import json
+with open('./files/public-2a') as json_file:
+    parse = json.load(json_file)
+a = (parse["Subnet"]["SubnetId"])
+a+=","
+
+with open('./files/public-2b') as json_file:
+    parse = json.load(json_file)
+b = (parse["Subnet"]["SubnetId"])
+b+=","
+
+with open('./files/public-2c') as json_file:
+    parse = json.load(json_file)
+c = (parse["Subnet"]["SubnetId"])
+
+res= a+b+c
+print(res)
+
+

@@ -1,0 +1,4 @@
+import json
+with open('./files/VPC.json') as json_file:
+    parse = json.load(json_file)
+print(parse["Vpc"]["VpcId"])

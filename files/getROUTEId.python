@@ -1,0 +1,7 @@
+import json
+with open('./files/ROUTE.json') as json_file:
+    parse = json.load(json_file)
+print(parse["RouteTable"]["RouteTableId"])
+
+
+
